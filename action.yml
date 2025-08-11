@@ -30,6 +30,9 @@ inputs:
   builder:
     default: default
     description: "The name of the builder. Default: 'default'"
+  extract:
+    default: "false"
+    description: "Extract the cache from the docker container (post step). When false, inject the cache (main step)"
 runs:
   using: 'node20'
   main: 'dist/index.js'
